@@ -19,7 +19,7 @@ export default Inicio = ({navigation}) => {
 
 const styles = StyleSheet.create({
     texto:{
-        fontSize:50,
+        fontSize:45,
         color:'white',
     },
 })

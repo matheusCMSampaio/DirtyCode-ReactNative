@@ -4,7 +4,6 @@ import { ImageBackground, StyleSheet } from 'react-native';
 const imageMap = {
   'background1.jpg': require('../assets/background1.jpg'),
   'fundoCinza.jpg': require('../assets/fundoCinza.jpg'),
-  // Adicione todas as suas imagens aqui
 };
 
 export default TelaFundo = ({ children, caminho }) => {
