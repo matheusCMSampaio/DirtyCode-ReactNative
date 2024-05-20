@@ -5,7 +5,7 @@ import axios from "axios";
 import { useState } from "react";
 
 const api = axios.create({
-    baseURL: "http://10.0.2.2:8080/user"
+    baseURL: "http://10.0.2.2:8080"
 });
 
 export default Cadastrar = ({ navigation }) => {
@@ -14,7 +14,7 @@ export default Cadastrar = ({ navigation }) => {
     const [senha, setSenha] = useState("");
 
     const salvar = async (obj)=> {
-        api.post('http://10.0.2.2:8080/user', obj)
+        api.post('/user', obj)
         .then(()=>{
             ToastAndroid.show("Dados salvos", ToastAndroid.LONG);
         })
