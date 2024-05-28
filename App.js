@@ -1,6 +1,7 @@
 import { StyleSheet} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import MyStack from './Components/MyStack';
+import MyTabs from './Components/MyTabs';
 
 export default function App() {
   return (

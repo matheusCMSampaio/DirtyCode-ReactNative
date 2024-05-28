@@ -8,6 +8,7 @@ import Cadastrar from './Cadastrar';
 import Usuario from './Usuario';
 import Chat from './Chat';
 import Forms from './Forms';
+import MyTabs from './MyTabs';
 
 const Stack = createStackNavigator();
 
@@ -35,11 +36,11 @@ function MyStack() {
       <Stack.Screen name='Cadastro' component={Cadastrar} />
       <Stack.Screen
         name='Usuario'
-        component={Usuario}
+        component={MyTabs}
         options={({ navigation }) => ({
           title: 'Exit',
           headerLeft: () => (
-            <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+            <TouchableOpacity onPress={() => navigation.navigate('Login')}>
               <Icon name="exit-to-app" size={25} color="white" style={{ marginLeft: 15 }} />
             </TouchableOpacity>
           ),

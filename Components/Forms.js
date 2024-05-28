@@ -10,17 +10,7 @@ export default Chat = ({navigation}) =>{
             <View style={{flex:2,width:'100%', height:'100%', backgroundColor:'rgba(120,120,120,0.4)', justifyContent:"flex-end", alignItems:"center"}}>
                 <Text style={{color:'red', fontSize:24}}>Em desenvolvimento</Text>
             </View>
-            <View style={styles.buttonContainer}>
-                <TouchableOpacity onPress={() => {navigation.navigate('Chat')}}>
-                    <Entypo name="chat" size={24} color="black" />
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => { /* Ação do segundo botão */ }}>
-                    <FontAwesome name="wpforms" size={24} color="black" />
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => { navigation.navigate('Usuario') }}>
-                    <AntDesign name="user" size={24} color="black" />
-                </TouchableOpacity>
-            </View>
+            
         </TelaFundo>
     )
 }

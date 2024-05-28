@@ -14,17 +14,6 @@ export default function Usuario({navigation}) {
                 />
                 <Text style={styles.profileName}>Nome do Usuário</Text>
             </View>
-            <View style={styles.buttonContainer}>
-                <TouchableOpacity onPress={() => {navigation.navigate('Chat')}}>
-                    <Entypo name="chat" size={24} color="black" />
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => { navigation.navigate('Forms') }}>
-                    <FontAwesome name="wpforms" size={24} color="black" />
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => { navigation.navigate('Usuario') }}>
-                    <AntDesign name="user" size={24} color="black" />
-                </TouchableOpacity>
-            </View>
         </Tela>
     );
 }
